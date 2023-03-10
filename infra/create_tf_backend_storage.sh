@@ -1,8 +1,8 @@
 #!/bin/bash
 
 RESOURCE_GROUP_NAME=tstate
-STORAGE_ACCOUNT_NAME=tstatesystest
-STORAGE_ACCOUNT_NAME=tstate$RANDOM # Uncomment to generate a random account name
+STORAGE_ACCOUNT_NAME=k8stutorialdemoivan1
+# STORAGE_ACCOUNT_NAME=tstate$RANDOM # Uncomment to generate a random account name
 CONTAINER_NAME=tstate
 
 # Create resource group
