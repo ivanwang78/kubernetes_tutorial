@@ -5,13 +5,13 @@ resource "azurerm_kubernetes_cluster" "example" {
   resource_group_name = "${var.resource_group_name}"
   dns_prefix          = "${var.prefix}-k8s"
 
-  agent_pool_profile {
+
+  default_node_pool {
     name            = "agentpool"
-    count           = "${var.node_count}"
+    node_count      = "${var.node_count}"
     vm_size         = "${var.vm_size}"
-    os_type         = "Linux"
     os_disk_size_gb = "${var.os_disk_size_gb}"
-  }
+  }   
 
   service_principal {
     client_id     = "${var.client_id}"
